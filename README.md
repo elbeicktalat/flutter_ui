@@ -18,5 +18,7 @@ Follow me on:
 Or email me directly on [My Email](mailto:talatelbeick@gmail.com)
 
 ### Profiles
-![Profile 1](doc/readme/profiles/profile_1.png)
-![Profile 2](doc/readme/profiles/profile_2.png)
+<div>
+  <img src="doc/readme/profiles/profile_1.png" width="200"/>
+  <img src="doc/readme/profiles/profile_2.png" width="200"/>
+</div>
