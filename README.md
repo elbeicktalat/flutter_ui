@@ -19,3 +19,4 @@ Or email me directly on [My Email](mailto:talatelbeick@gmail.com)
 
 ### Profiles
 ![Profile 1](doc/readme/profiles/profile_1.png)
+![Profile 2](doc/readme/profiles/profile_2.png)
