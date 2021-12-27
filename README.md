@@ -21,4 +21,5 @@ Or email me directly on [My Email](mailto:talatelbeick@gmail.com)
 <div>
   <img src="doc/readme/profiles/profile_1.png" width="200"/>
   <img src="doc/readme/profiles/profile_2.png" width="200"/>
+  <img src="doc/readme/profiles/profile_3.png" width="200"/>
 </div>

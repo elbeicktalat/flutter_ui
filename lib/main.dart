@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ui/profiles/profile1/profile.dart';
-import 'package:flutter_ui/profiles/profile2/profile.dart';
+import 'package:flutter_ui/profiles/profile3/profile.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const Profile2(),
+      home: const Profile3(),
     );
   }
 }
