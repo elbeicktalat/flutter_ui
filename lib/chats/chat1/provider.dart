@@ -10,50 +10,50 @@ class Provider {
         Massage(
           sender: contact1,
           receiver: contact2,
-          dateTime: '23:35',
+          dateTime: '08:35',
           body: 'Hi ${contact2.name} how are you?',
         ),
         Massage(
           sender: contact2,
           receiver: contact1,
-          dateTime: '23:35',
+          dateTime: '08:36',
           body: 'Hi ${contact1.name} I am fine thank you',
         ),
         Massage(
           sender: contact2,
           receiver: contact1,
-          dateTime: '23:36',
+          dateTime: '08:36',
           body: 'And you?',
         ),
         Massage(
           sender: contact1,
           receiver: contact2,
-          dateTime: '23:36',
+          dateTime: '08:37',
           body: 'I am also fine thank you',
         ),
         Massage(
           sender: contact2,
           receiver: contact1,
-          dateTime: '23:36',
+          dateTime: '08:37',
           body: 'Do you want take your coffee with me?',
         ),
         Massage(
           sender: contact1,
           receiver: contact2,
-          dateTime: '23:37',
+          dateTime: '08:37',
           body: 'Off course let me know where',
         ),
         Massage(
           sender: contact2,
           receiver: contact1,
-          dateTime: '23:37',
-          body: 'Well there is great cafeteria under my house',
+          dateTime: '08:38',
+          body: 'Well there is great cafeteria under my house, what do you think about going there.',
         ),
         Massage(
           sender: contact1,
           receiver: contact2,
-          dateTime: '23:37',
-          body: 'All right ${contact2.name} see after',
+          dateTime: '08:40',
+          body: 'Nice idea ${contact2.name} see you there!',
         ),
       ],
     );
@@ -61,7 +61,7 @@ class Provider {
 
   static List<Conversion> getConversions() {
     Contact contact1 = Contact(
-      name: 'Talat El Beick',
+      name: 'Talat',
       phone: '351-354-XXXX',
       avatar: 'assets/images/profiles/me.jpg',
     );
