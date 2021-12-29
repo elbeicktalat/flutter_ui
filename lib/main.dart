@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ui/profiles/profile8/profile_8.dart';
+import 'package:flutter_ui/chats/chat1/chat_1.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const Profile8(),
+      home: const Chat1(),
     );
   }
 }
