@@ -8,7 +8,7 @@ This project goal is to show his capabilities using flutter, and showing case of
 
 ## What does make this project as challenge:
 1. This project is a pure use of flutter there is no third party state management tools.
-2. No usage of unnecessary packages.
+2. No any use of third party packages.
 
 Follow me on:
 - [GitHub](https://github.com/elbeicktalat)
@@ -16,6 +16,8 @@ Follow me on:
 - [Linkedin](https://www.linkedin.com/in/elbeicktalat)
 
 Or email me directly on [My Email](mailto:talatelbeick@gmail.com)
+
+**Note:** This is hard coding, so may is not fully responsive design.
 
 ### Profiles
 <div>
