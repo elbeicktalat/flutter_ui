@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ui/chats/chat1/chat_1_conversation.dart';
 
+import 'chats/chat1/chat_1.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -16,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const Chat1Conversation(id: 'Talat'),
+      home: const Chat1(),
     );
   }
 }
