@@ -3,60 +3,57 @@ import 'package:flutter_ui/chats/chat1/models/conversion.dart';
 import 'package:flutter_ui/chats/chat1/models/massage.dart';
 
 class Provider {
-  static Conversion _conversion({
-    required Contact receiver,
-    required Contact sender,
-  }) {
+  static Conversion _conversion(Contact contact1, Contact contact2) {
     return Conversion(
-      contact: receiver,
+      contact: contact2,
       massages: [
         Massage(
-          sender: sender,
-          receiver: receiver,
+          sender: contact1,
+          receiver: contact2,
           dateTime: '23:35',
-          body: 'Hi ${receiver.name} how are you?',
+          body: 'Hi ${contact2.name} how are you?',
         ),
         Massage(
-          sender: sender,
-          receiver: receiver,
+          sender: contact2,
+          receiver: contact1,
           dateTime: '23:35',
-          body: 'Hi ${sender.name} I am fine thank you',
+          body: 'Hi ${contact1.name} I am fine thank you',
         ),
         Massage(
-          sender: sender,
-          receiver: receiver,
+          sender: contact2,
+          receiver: contact1,
           dateTime: '23:36',
           body: 'And you?',
         ),
         Massage(
-          sender: sender,
-          receiver: receiver,
+          sender: contact1,
+          receiver: contact2,
           dateTime: '23:36',
           body: 'I am also fine thank you',
         ),
         Massage(
-          sender: sender,
-          receiver: receiver,
+          sender: contact2,
+          receiver: contact1,
           dateTime: '23:36',
           body: 'Do you want take your coffee with me?',
         ),
         Massage(
-          sender: sender,
-          receiver: receiver,
+          sender: contact1,
+          receiver: contact2,
           dateTime: '23:37',
           body: 'Off course let me know where',
         ),
         Massage(
-          sender: sender,
-          receiver: receiver,
+          sender: contact2,
+          receiver: contact1,
           dateTime: '23:37',
           body: 'Well there is great cafeteria under my house',
         ),
         Massage(
-          sender: sender,
-          receiver: receiver,
+          sender: contact1,
+          receiver: contact2,
           dateTime: '23:37',
-          body: 'All right ${receiver.name} see after',
+          body: 'All right ${contact2.name} see after',
         ),
       ],
     );
@@ -85,9 +82,9 @@ class Provider {
     );
 
     return [
-      _conversion(sender: contact1, receiver: contact2),
-      _conversion(sender: contact1, receiver: contact3),
-      _conversion(sender: contact1, receiver: contact4),
+      _conversion(contact1, contact2),
+      _conversion(contact1, contact3),
+      _conversion(contact1, contact4),
     ];
   }
 }
