@@ -5,7 +5,7 @@ import 'package:flutter_ui/chats/chat1/provider.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Chat1Conversation extends StatefulWidget {
-  const Chat1Conversation({Key? key, required this.id}) : super(key: key);
+  const Chat1Conversation({Key? key, this.id = 'talat'}) : super(key: key);
 
   final String id;
 
