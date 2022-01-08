@@ -27,3 +27,4 @@ flutter:
 
   assets:
     - assets/images/profiles/
+    - assets/images/auths/
