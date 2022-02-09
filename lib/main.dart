@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ui/auths/auth1/auth_1.dart';
+import 'package:flutter_ui/auths/auth2/auth_2.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const Auth1(),
+      home: const Auth2(),
     );
   }
 }
