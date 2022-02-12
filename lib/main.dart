@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ui/auths/auth2/auth_2.dart';
+import 'package:flutter_ui/profiles/profile8/profile_8.dart';
 import 'package:flutter_ui/profiles/profile9/profile_9.dart';
 
 void main() {
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const Profile9(),
+      home: const Auth2(),
     );
   }
 }
