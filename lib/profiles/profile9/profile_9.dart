@@ -60,11 +60,10 @@ class _Profile9State extends State<Profile9> {
                     Container(
                       width: 100,
                       height: 100,
-                      decoration: const BoxDecoration(
+                      decoration: BoxDecoration(
                         shape: BoxShape.circle,
                         image: DecorationImage(
-                          image:
-                              ExactAssetImage('assets/images/profiles/me.jpg'),
+                          image: ExactAssetImage(_profile.user!.avatar!),
                         ),
                       ),
                     ),
@@ -89,12 +88,85 @@ class _Profile9State extends State<Profile9> {
                 ),
               ),
             ),
+            Positioned(
+              top: MediaQuery.of(context).size.height * 0.45,
+              left: 0,
+              right: 0,
+              child: Padding(
+                padding: const EdgeInsets.all(18.0),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      'ABOUT',
+                      style: TextStyle(
+                        color: Colors.grey.shade800,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    const SizedBox(height: 18.0),
+                    Text(
+                      _profile.user!.about!,
+                      style: const TextStyle(
+                        letterSpacing: 1.2,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
           ],
         ),
-        floatingActionButton: FloatingActionButton(
-          onPressed: () {},
-          backgroundColor: Colors.pink,
-          child: const Icon(Icons.add),
+        floatingActionButton: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Transform.translate(
+              offset: const Offset(28, 0),
+              child: Row(
+                children: [
+                  CircleAvatar(
+                    backgroundImage: ExactAssetImage(_profile.user!.avatar!),
+                  ),
+                  const SizedBox(width: 8.0),
+                  Container(
+                    padding: const EdgeInsets.symmetric(horizontal: 16.0),
+                    width: 200,
+                    height: 50,
+                    decoration: BoxDecoration(
+                      color: Colors.blue,
+                      borderRadius: BorderRadius.circular(_borderRadius),
+                    ),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text(
+                          _profile.user!.name!,
+                          style: const TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                            letterSpacing: 1.4,
+                          ),
+                        ),
+                        const Text(
+                          'Hi how can I help you?',
+                          style: TextStyle(
+                            fontSize: 12,
+                            color: Colors.white,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            FloatingActionButton(
+              onPressed: () {},
+              backgroundColor: Colors.pink,
+              child: const Icon(Icons.add),
+            ),
+          ],
         ),
       ),
     );

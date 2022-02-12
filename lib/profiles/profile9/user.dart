@@ -1,7 +1,7 @@
 class User {
-  String? name, address, avatar;
+  String? name, address, about, avatar;
 
-  User({this.name, this.address, this.avatar});
+  User({this.name, this.address, this.about, this.avatar});
 }
 
 class Profile {
