@@ -48,4 +48,5 @@ Or email me directly on [My Email](mailto:talatelbeick@gmail.com)
 <div>
   <img src="doc/readme/auth/auth_1.png" width="200"/>
   <img src="doc/readme/auth/auth_2.png" width="200"/>
+  <img src="doc/readme/auth/auth_3.png" width="200"/>
 </div>

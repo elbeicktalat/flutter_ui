@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ui/profiles/profile10/profile_10.dart';
+import 'package:flutter_ui/auths/auth3/auth3.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const Profile10(),
+      home: const Auth3(),
     );
   }
 }
