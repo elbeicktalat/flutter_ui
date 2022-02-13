@@ -14,6 +14,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   flutter_page_view_indicator: ^0.0.5
   google_fonts: ^2.1.1
+  auth_buttons: ^2.0.4
 
 dev_dependencies:
   flutter_test:

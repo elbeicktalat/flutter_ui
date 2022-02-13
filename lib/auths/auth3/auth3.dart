@@ -1,3 +1,4 @@
+import 'package:auth_buttons/auth_buttons.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -12,6 +13,8 @@ class _Auth3State extends State<Auth3> {
   final Key _formKey = GlobalKey<FormState>();
   late final TextEditingController _emailController;
   late final TextEditingController _passwordController;
+  bool _googleIsLoading = false;
+  bool _facebookIsLoading = false;
 
   @override
   void initState() {
@@ -95,92 +98,19 @@ class _Auth3State extends State<Auth3> {
                   Container(
                     width: double.infinity,
                     height: MediaQuery.of(context).size.height * 0.7,
-                    padding: const EdgeInsets.symmetric(
-                      vertical: 48.0,
-                      horizontal: 24.0,
-                    ),
+                    padding: const EdgeInsets.symmetric(horizontal: 24.0),
                     decoration: const BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.vertical(
                         top: Radius.circular(36.0),
                       ),
                     ),
-                    child: Form(
-                      key: _formKey,
-                      child: Column(
-                        children: [
-                          TextFormField(
-                            controller: _emailController,
-                            keyboardType: TextInputType.emailAddress,
-                            decoration: const InputDecoration(
-                              hintText: 'email@address.com',
-                              labelText: 'Your Email',
-                              hintStyle: TextStyle(
-                                color: Color(0xff6b6b6b),
-                              ),
-                              labelStyle: TextStyle(
-                                color: Colors.black,
-                                fontSize: 18.0,
-                              ),
-                              focusedBorder: OutlineInputBorder(
-                                borderSide: BorderSide(color: Colors.orange),
-                              ),
-                              floatingLabelBehavior:
-                                  FloatingLabelBehavior.always,
-                            ),
-                          ),
-                          const SizedBox(height: 28.0),
-                          TextFormField(
-                            controller: _passwordController,
-                            obscureText: true,
-                            enableSuggestions: false,
-                            autocorrect: false,
-                            decoration: const InputDecoration(
-                              labelText: 'Password',
-                              hintText: '*********',
-                              hintStyle: TextStyle(
-                                color: Color(0xff6b6b6b),
-                              ),
-                              labelStyle: TextStyle(
-                                color: Colors.black,
-                                fontSize: 18.0,
-                              ),
-                              focusedBorder: OutlineInputBorder(
-                                borderSide: BorderSide(color: Colors.orange),
-                              ),
-                              floatingLabelBehavior:
-                                  FloatingLabelBehavior.always,
-                            ),
-                          ),
-                          const SizedBox(height: 28.0),
-                          SizedBox(
-                            width: double.infinity,
-                            height: 50.0,
-                            child: ElevatedButton(
-                              onPressed: () {},
-                              style: ButtonStyle(
-                                backgroundColor: MaterialStateProperty.all(
-                                  Colors.black,
-                                ),
-                                shape: MaterialStateProperty.all(
-                                  RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(45.0),
-                                  ),
-                                ),
-                              ),
-                              child: const Text(
-                                'Sign in',
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 18.0,
-                                  fontWeight: FontWeight.bold,
-                                  letterSpacing: 1.6,
-                                ),
-                              ),
-                            ),
-                          )
-                        ],
-                      ),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        _form(),
+                        _authButtons(),
+                      ],
                     ),
                   ),
                 ],
@@ -189,6 +119,130 @@ class _Auth3State extends State<Auth3> {
           ),
         ],
       ),
+    );
+  }
+
+  Widget _form() {
+    return Form(
+      key: _formKey,
+      child: Column(
+        children: [
+          TextFormField(
+            controller: _emailController,
+            keyboardType: TextInputType.emailAddress,
+            decoration: const InputDecoration(
+              hintText: 'email@address.com',
+              labelText: 'Your Email',
+              hintStyle: TextStyle(
+                color: Color(0xff6b6b6b),
+              ),
+              labelStyle: TextStyle(
+                color: Colors.black,
+                fontSize: 18.0,
+              ),
+              focusedBorder: OutlineInputBorder(
+                borderSide: BorderSide(color: Colors.orange),
+              ),
+              floatingLabelBehavior: FloatingLabelBehavior.always,
+            ),
+          ),
+          const SizedBox(height: 28.0),
+          TextFormField(
+            controller: _passwordController,
+            obscureText: true,
+            enableSuggestions: false,
+            autocorrect: false,
+            decoration: const InputDecoration(
+              labelText: 'Password',
+              hintText: '*********',
+              hintStyle: TextStyle(
+                color: Color(0xff6b6b6b),
+              ),
+              labelStyle: TextStyle(
+                color: Colors.black,
+                fontSize: 18.0,
+              ),
+              focusedBorder: OutlineInputBorder(
+                borderSide: BorderSide(color: Colors.orange),
+              ),
+              floatingLabelBehavior: FloatingLabelBehavior.always,
+            ),
+          ),
+          const SizedBox(height: 28.0),
+          SizedBox(
+            width: double.infinity,
+            height: 50.0,
+            child: ElevatedButton(
+              onPressed: () {},
+              style: ButtonStyle(
+                backgroundColor: MaterialStateProperty.all(
+                  Colors.black,
+                ),
+                shape: MaterialStateProperty.all(
+                  RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(45.0),
+                  ),
+                ),
+              ),
+              child: const Text(
+                'Sign in',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 18.0,
+                  fontWeight: FontWeight.bold,
+                  letterSpacing: 1.6,
+                ),
+              ),
+            ),
+          ),
+          const SizedBox(height: 8.0),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              const Text("Don't have one?"),
+              const SizedBox(width: 8.0),
+              TextButton(
+                onPressed: () {},
+                child: const Text('Sign up'),
+              ),
+            ],
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _authButtons() {
+    return Column(
+      children: [
+        GoogleAuthButton(
+          onPressed: () {
+            setState(() {
+              _googleIsLoading = !_googleIsLoading;
+            });
+          },
+          isLoading: _googleIsLoading,
+          style: const AuthButtonStyle(
+            width: double.infinity,
+            height: 50.0,
+            borderRadius: 45.0,
+          ),
+        ),
+        const SizedBox(height: 18.0),
+        FacebookAuthButton(
+          onPressed: () {
+            setState(() {
+              _facebookIsLoading = !_facebookIsLoading;
+            });
+          },
+          isLoading: _facebookIsLoading,
+          style: const AuthButtonStyle(
+            width: double.infinity,
+            height: 50.0,
+            borderRadius: 45.0,
+          ),
+        ),
+      ],
     );
   }
 }
