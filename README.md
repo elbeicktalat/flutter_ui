@@ -54,5 +54,5 @@ Or email me directly on [My Email](mailto:talatelbeick@gmail.com)
 ### Feed
 
 <div>
-  <img src="doc/readme/feed/feed_1.png" width="200"/>
+  <img src="doc/readme/feeds/feed_1.png" width="200"/>
 </div>
