@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ui/feed/feed1/feed1.dart';
+import 'package:flutter_ui/auths/auth4/auth_4.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const Feed1(),
+      home: const Auth4(),
     );
   }
 }
