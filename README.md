@@ -50,6 +50,7 @@ Or email me directly on [My Email](mailto:talatelbeick@gmail.com)
   <img src="doc/readme/auth/auth_2.png" width="200"/>
   <img src="doc/readme/auth/auth_3.png" width="200"/>
   <img src="doc/readme/auth/auth_4.png" width="200"/>
+  <img src="doc/readme/auth/auth_5.png" width="200"/>
 </div>
 
 ### Feed

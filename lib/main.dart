@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ui/auths/auth4/auth_4.dart';
+
+import 'auths/auth5/auth_5.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const Auth4(),
+      home: const Auth5(),
     );
   }
 }
