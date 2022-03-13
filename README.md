@@ -60,3 +60,9 @@ Or email me directly on [My Email](mailto:talatelbeick@gmail.com)
 <div>
   <img src="doc/readme/feeds/feed_1.png" width="200"/>
 </div>
+
+### Widgets
+
+<div>
+  <img src="doc/readme/widgets/clocks/clock_1.gif" width="200"/>
+</div>

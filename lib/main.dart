@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ui/auths/auth7/auth_7.dart';
+import 'package:flutter_ui/widgets/clocks/clock_1_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const Auth7(),
+      home: const Clock1Screen(),
     );
   }
 }
