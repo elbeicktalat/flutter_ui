@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ui/auths/auth6/auth_6.dart';
+import 'package:flutter_ui/auths/auth7/auth_7.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const Auth6(),
+      home: const Auth7(),
     );
   }
 }
