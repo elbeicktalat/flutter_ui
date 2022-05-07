@@ -1,7 +1,9 @@
+import 'dart:math' as math;
+
 import 'package:flutter/material.dart';
 import 'package:flutter_page_view_indicator/flutter_page_view_indicator.dart';
 import 'package:flutter_ui/app/social_media_1/colors.dart';
-import 'dart:math' as math;
+import 'package:flutter_ui/app/social_media_1/profile/profile.dart';
 
 class Onboarding extends StatefulWidget {
   const Onboarding({Key? key}) : super(key: key);
@@ -51,7 +53,7 @@ class _OnboardingState extends State<Onboarding>
                   Text(
                     'The best photos from good people',
                     style: Theme.of(context).textTheme.headline4!.copyWith(
-                          color: AppColors.darkTypography,
+                          color: AppColors.darkForeground,
                         ),
                   ),
                   const SizedBox(height: 32),
@@ -85,7 +87,13 @@ class _OnboardingState extends State<Onboarding>
               Container(
                 margin: const EdgeInsets.only(bottom: 28),
                 child: InkWell(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (context) => Profile(),
+                      ),
+                    );
+                  },
                   child: Container(
                     width: size.width * .75,
                     height: size.height * .08,
