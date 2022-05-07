@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ui/widgets/clocks/clock_1_screen.dart';
+import 'package:flutter_ui/app/social_media_1/social_media_1.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const Clock1Screen(),
+      home: const SocialMedia1(),
     );
   }
 }
