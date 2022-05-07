@@ -66,3 +66,11 @@ Or email me directly on [My Email](mailto:talatelbeick@gmail.com)
 <div>
   <img src="doc/readme/widgets/clocks/clock_1.gif" width="200"/>
 </div>
+
+### App
+
+### Social media 1
+<div>
+  <img src="doc/readme/app/social_media_1/onboarding.gif" width="200"/>
+  <img src="doc/readme/app/social_media_1/profile.png" width="200"/>
+</div>
