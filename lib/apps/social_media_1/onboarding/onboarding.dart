@@ -2,8 +2,8 @@ import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
 import 'package:flutter_page_view_indicator/flutter_page_view_indicator.dart';
-import 'package:flutter_ui/app/social_media_1/colors.dart';
-import 'package:flutter_ui/app/social_media_1/profile/profile.dart';
+import 'package:flutter_ui/apps/social_media_1/colors.dart';
+import 'package:flutter_ui/apps/social_media_1/profile/profile.dart';
 
 class Onboarding extends StatefulWidget {
   const Onboarding({Key? key}) : super(key: key);
@@ -76,7 +76,7 @@ class _OnboardingState extends State<Onboarding>
                     return Transform.rotate(
                       angle: _controller.value * 2 * math.pi,
                       child: Image.asset(
-                        'assets/images/app/social_media_1/flower.png',
+                        'assets/images/apps/social_media_1/flower.png',
                         fit: BoxFit.cover,
                         width: size.width * .7,
                       ),

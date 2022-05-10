@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ui/app/social_media_1/colors.dart';
+import 'package:flutter_ui/apps/social_media_1/colors.dart';
 
 class Profile extends StatefulWidget {
   const Profile({Key? key}) : super(key: key);
