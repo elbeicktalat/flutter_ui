@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ui/app/social_media_1/social_media_1.dart';
+import 'package:flutter_ui/apps/bank_1/bank_dashboard_1.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const SocialMedia1(),
+      home: const BankDashboard1(),
     );
   }
 }
