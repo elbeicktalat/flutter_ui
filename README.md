@@ -67,10 +67,15 @@ Or email me directly on [My Email](mailto:talatelbeick@gmail.com)
   <img src="doc/readme/widgets/clocks/clock_1.gif" width="200"/>
 </div>
 
-### App
+### Apps
 
 ### Social media 1
 <div>
-  <img src="doc/readme/app/social_media_1/onboarding.gif" width="200"/>
-  <img src="doc/readme/app/social_media_1/profile.png" width="200"/>
+  <img src="doc/readme/apps/social_media_1/onboarding.gif" width="200"/>
+  <img src="doc/readme/apps/social_media_1/profile.png" width="200"/>
+</div>
+
+### Bank 1
+<div>
+  <img src="doc/readme/apps/bank_1/bank_1.gif" width="200"/>
 </div>
